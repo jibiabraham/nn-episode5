@@ -92,6 +92,13 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
             }
         });
 
+        mStickyView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().popBackStack();
+            }
+        });
+
         return view;
     }
 
