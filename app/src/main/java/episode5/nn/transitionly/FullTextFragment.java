@@ -23,6 +23,7 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
     private PostItem post;
     private ImageView mStickyView;
     private View mPlaceholder;
+    private int mStickyHeight;
     private int startY;
 
     public FullTextFragment() {
@@ -85,7 +86,8 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
             @Override
             public boolean onPreDraw() {
                 mStickyView.getViewTreeObserver().removeOnPreDrawListener(this);
-                mPlaceholder.setMinimumHeight(mStickyView.getMeasuredHeight());
+                mStickyHeight = mStickyView.getMeasuredHeight();
+                mPlaceholder.setMinimumHeight(mStickyHeight);
                 return true;
             }
         });
@@ -107,7 +109,7 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
 
     @Override
     public void onScrollChanged(int scrollY) {
-        mStickyView.setTranslationY(Math.max(mPlaceholder.getTop(), scrollY));
+        mStickyView.setTranslationY(Math.max(0, Math.round(scrollY - 0.8 * mStickyHeight)));
     }
 
     @Override
