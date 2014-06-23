@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Transition.ly</string>
+    <string name="dummy_preview">        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</string>
+
+    <array name="drawables">
+        <item>@drawable/seanbatten_onpatrol</item>
+        <item>@drawable/klickertrigger_well</item>
+        <item>@drawable/dreamscapes</item>
+    </array>
+
+    <string-array name="preview_text">
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</item>
+    </string-array>
+    <string-array name="full_text">
+        <item>            Over the top! The wire’s thin here, unbarbed\n
+            Plain rusty coils, not staked, and low enough:\n
+            Full of old tins, though — “When you’re through, all three,\n
+            Aim quarter left for fifty yards or so,\n
+            Then straight for that new piece of German wire;\n
+            See if it’s thick, and listen for a while\n
+            For sounds of working; don’t run any risks;\n
+            About an hour; now, over!”\n
+            And we placed\n
+            Our hands on the topmost sand-bags, leapt, and stood\n
+            A second with curved backs, then crept to the wire,\n
+            Wormed ourselves tinkling through, glanced back, and dropped.\n
+            The sodden ground was splashed with shallow pools,\n
+            And tufts of crackling cornstalks, two years old,\n
+            No man had reaped, and patches of spring grass.\n
+            Half-seen, as rose and sank the flares, were strewn\n
+            The wrecks of our attack: the bandoliers,\n
+            Packs, rifles, bayonets, belts, and haversacks,\n
+            Shell fragments, and the huge whole forms of shells\n
+            Shot fruitlessly — and everywhere the dead.\n
+            Only the dead were always present — present\n
+            As a vile sickly smell of rottenness;\n
+            The rustling stubble and the early grass,\n
+            The slimy pools — the dead men stank through all,\n
+            Pungent and sharp; as bodies loomed before,\n
+            And as we passed, they stank: then dulled away\n
+            To that vague fœtor, all encompassing,\n
+            Infecting earth and air. They lay, all clothed,\n
+            Each in some new and piteous attitude\n
+            That we well marked to guide us back: as he,\n
+            Outside our wire, that lay on his back and crossed\n
+            His legs Crusader-wise: I smiled at that,\n
+            And thought on Elia and his Temple Church.\n
+            From him, at quarter left, lay a small corpse,\n
+            Down in a hollow, huddled as in a bed,\n
+            That one of us put his hand on unawares.\n
+            Next was a bunch of half a dozen men\n
+            All blown to bits, an archipelago\n
+            Of corrupt fragments, vexing to us three,\n
+            Who had no light to see by, save the flares.\n
+            On such a trail, so light, for ninety yards\n
+            We crawled on belly and elbows, till we saw,\n
+            Instead of lumpish dead before our eyes,\n
+            The stakes and crosslines of the German wire.\n
+            We lay in shelter of the last dead man,\n
+            Ourselves as dead, and heard their shovels ring\n
+            Turning the earth, then talk and cough at times.\n
+            A sentry fired and a machine-gun spat;\n
+            They shot a glare above us, when it fell\n
+            And spluttered out in the pools of No Man’s Land,\n
+            We turned and crawled past the remembered dead:\n
+            Past him and him, and them and him, until,\n
+            For he lay some way apart, we caught the scent\n
+            Of the Crusader and slide past his legs,\n
+            And through the wire and home, and got our rum.</item>
+        <item>            Dresses of seasons are falling downd\n
+            From behind the veils of summers winters autumns springsd\n
+            Nothing has really changedd\n
+            Between the borders of wars worlds words and warningsd\n
+            No difference between thosed\n
+            Who still do not understandd\n
+            And those who thinkd\n
+            They got it all just rightd\n
+            Equally grasped in Loved\n
+            And the all pervading mother Mercyd\n
+            Against the Mother Courage Inflictiond\n
+            When the rivers of Babylond\n
+            Splash our tears again and againd\n
+            Great worlds lost out little lives foundd\n
+            In the memories of Siond\n
+            Old sages growing their beardsd\n
+            Like the white rivers of eternal snowd\n
+            Covering everything never to meltd\n
+            Old sages with yellow golden sticksd\n
+            Walking the same dry desertsd\n
+            Of survival sagas sagaciousd\n
+            Singing songs of springs ever lostd\n
+            And autumn breathing swaying the lungsd\n
+            Hanging upon the last atom of air</item>
+        <item>            In the dream, Homer, Lucretius, Virgil, Ovid, Dante, Shakespeare, Edgar Allan Poe, and Robert Frost meditate in the Kingdom by the sea and want to know if they found Eldorado. /n
+
+            Shall I compare you to the summers night/n
+            My beautiful Anabel Lee? /n
+            Shall I take the Road less traveled/n
+            In search of Eldorado? /n
+
+            Or shall I compare you to the summers day/n
+            When I seek Eldorado? /n
+            Shall I take every road /n
+            In search of my Anabel Lee/n
+            In this kingdom by the sea? /n
+            Shall I find Eldorado in my beautiful Anabel Lee? /n
+
+            Or shall I stop in the middle of the Forest, /n
+            In the middle of my journey, /n
+            And weep because of Senza Luna/n
+            In the Jungle and in my heart? /n
+            For I had lost the path that does not stray/n
+            Nel mezzo del cammin di nostra vita/n
+            Mi ritrovai per una selva oscura/n
+            Che la dirrita via era smarrita./n
+
+            Or shall I remember that/n
+            My soul sang of metamorphoses? /n
+            before the sea and lands began to be, /n
+            before the sky had mantled every thing, /n
+            then all of natures face was featureless— /n
+            what men call chaos: undigested mass/n
+            of crude, confused, and scumbled elements, /n
+            a heap of seeds that clashed, of things mismatched./n
+            There was no Titan Sun to light the world, /n
+            No crescent Moon./n
+
+            Shall I dwell in this dark forest? /n
+            Or shall I seek the kingdom by the sea to see/n
+            When young Dawn with her rose-red fingers shone once more? /n
+            The true Mother of Romans, joy of gods and men, was born, /n
+            the first true woman, Venus, life giver, who under planet and star/n
+            visits the ship-clad sea, the grain-clothed land/n
+            always. For through you all thats born and breathes/n
+            is gotten, created, brought forth to see the sun, /n
+            Lady, the storms and clouds of heaven shun you, /n
+            You and your advent. Earth sweet magic-maker, /n
+            Sends up her flowers for you, broad Ocean smiles, /n
+            And peace glows in the light that fills the sky.</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

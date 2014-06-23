@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<episode5.nn.transitionly.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="250dp"></View>
+
+        <TextView
+            android:id="@+id/preview_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeholder"
+            android:text="@string/dummy_preview"
+            android:padding="10dp"
+            android:textColor="#f31a0404" />
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/seanbatten_onpatrol"/>
+
+    </RelativeLayout>
+</episode5.nn.transitionly.ObservableScrollView>
