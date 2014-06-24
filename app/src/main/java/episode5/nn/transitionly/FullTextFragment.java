@@ -3,6 +3,7 @@ package episode5.nn.transitionly;
 
 
 import android.animation.Animator;
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -25,6 +27,7 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
     private View mPlaceholder;
     private int mStickyHeight;
     private int startY;
+    private int currentScrollY;
 
     public FullTextFragment() {
         // Required empty public constructor
@@ -75,22 +78,27 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
         mStickyView.setImageResource(R.drawable.dreamscapes);
         fullText.setText(post.full_text);
 
-        view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                onScrollChanged(view.getScrollY());
-            }
-        });
+        ViewTreeObserver observer = mStickyView.getViewTreeObserver();
 
-        mStickyView.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
-            @Override
-            public boolean onPreDraw() {
-                mStickyView.getViewTreeObserver().removeOnPreDrawListener(this);
-                mStickyHeight = mStickyView.getMeasuredHeight();
-                mPlaceholder.setMinimumHeight(mStickyHeight);
-                return true;
-            }
-        });
+        if(observer != null){
+            observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    onScrollChanged(view.getScrollY());
+                }
+            });
+            observer.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+                @Override
+                public boolean onPreDraw() {
+                    ViewTreeObserver observer = mStickyView.getViewTreeObserver();
+                    if(observer != null)
+                        observer.removeOnPreDrawListener(this);
+                    mStickyHeight = mStickyView.getMeasuredHeight();
+                    mPlaceholder.setMinimumHeight(mStickyHeight);
+                    return true;
+                }
+            });
+        }
 
         mStickyView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,23 +107,38 @@ public class FullTextFragment extends Fragment implements ObservableScrollView.C
             }
         });
 
+        mStickyView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                ViewParent parent = v.getParent();
+                if(parent != null){
+                    parent.requestDisallowInterceptTouchEvent(true);
+                }
+                return false;
+            }
+        });
+
         return view;
     }
 
     @Override
     public Animator onCreateAnimator(int transit, boolean enter, int nextAnim) {
-        Animator anim;
+        ObjectAnimator resetScroll = ObjectAnimator.ofInt(getView(), "scrollY", currentScrollY, 0).setDuration(250);
+        Animator moveFragmentToPostion;
+        AnimatorSet set = new AnimatorSet();
         if(enter){
-            anim = ObjectAnimator.ofFloat(null, "translationY", startY, 0f);
+            moveFragmentToPostion = ObjectAnimator.ofFloat(null, "translationY", startY, 0f).setDuration(350);
+            set.play(moveFragmentToPostion);
         } else {
-            anim = ObjectAnimator.ofFloat(null, "translationY", 0f, startY);
+            moveFragmentToPostion = ObjectAnimator.ofFloat(null, "translationY", 0f, startY).setDuration(350);
+            set.playTogether(resetScroll, moveFragmentToPostion);
         }
-        anim.setDuration(500);
-        return anim;
+        return set;
     }
 
     @Override
     public void onScrollChanged(int scrollY) {
+        currentScrollY = scrollY;
         mStickyView.setTranslationY(Math.max(0, Math.round(scrollY - 0.8 * mStickyHeight)));
     }
 
